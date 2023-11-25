@@ -21,7 +21,7 @@ jobs:
       with: 
         registry: c8n.io
         username: ${{ secrets.C8N_USERNAME }}
-        password: ${{ secrets.c8N_SECRET }}
+        password: ${{ secrets.C8N_SECRET }}
 
       
     - name: Build and push container image
