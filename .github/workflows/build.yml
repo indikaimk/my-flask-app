@@ -28,5 +28,5 @@ jobs:
       uses: docker/build-push-action@v5
       with:
         push: true
-        tags: c8n.io/indikaimk/my-flask-app
+        tags: c8n.io/indikaimk/my-flask-app:1.0.1
 
