@@ -11,7 +11,8 @@ WORKDIR /app
 # copy the application to working directory.
 COPY . .
 
-EXPOSE 5000
+EXPOSE 8000
 
 # Run
-CMD [ "flask", "--app", "my-app", "run", "--host=0.0.0.0" ]
+#CMD [ "flask", "--app", "my-app", "run", "--host=0.0.0.0" ]
+CMD [ "gunicorn", "--bind=0.0.0.0:8000", "wsgi:app" ]
